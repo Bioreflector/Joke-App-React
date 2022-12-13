@@ -1,0 +1,13 @@
+.categoriesContainer {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 650px) {
+  .categoriesContainer{
+    gap: 5px;
+  }
+}
+
+

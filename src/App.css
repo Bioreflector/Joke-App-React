@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.msi {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 78px;
+}
+.work-place {
+  width: 960px;
+  padding: 60px 142px 0 142px;
+  
+}
+.App h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 52px;
+}
+.App h1 span {
+  display: block;
+  font-size: 20px;
+}
+/* Joke Card */
+.jokeCard {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  padding: 67px 40px 46px 100px;
+  border-radius: 20px;
+}
+.jokeCard span {
+  color: #ababab;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+.jokeCard p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 23px;
+}
+.cardInf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jokeCard a {
+  color: #8ea7ff;
+  font-weight: 400;
+}
+.cardIcon {
+  color: grey;
+}
+.cardCategory {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 6px 20px;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 6px;
+}
+.cardInf {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ababab;
+}
+.cardIconContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  left: 40px;
+  top: 67px;
+}
+/* Favourite Jokes */
+.favouriteWrapper {
+  width: 480px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.favouriteJokes {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 60px 40px 0 40px;
+}
+.favouriteJokes .jokeCard {
+  background-color: white;
+  padding: 47px 20px 20px 80px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.favouriteJokes .jokeCard p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.favouriteJokes .cardIconContainer {
+  background-color: #f8f8f8;
+}
+.favouriteJokes h2 {
+  color: #ababab;
+  margin-bottom: 10px;
+}
+/* resopnsive */
+@media screen and (max-width: 1000px) {
+  .favouriteJokes h2 {
+    display: none;
+  }
+  .work-place {
+    width: 100%;
+    padding: 20px;
+  }
+  .favouriteWrapper {
+    width: 100%;
+    position: absolute;
+    right: -100%;
+    transition: all ease 0.5s;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    height: 100%;
+  }
+  .favouriteJokes {
+    width: 480px;
+    
+  }
+  .favouriteWrapperShow {
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+}
+@media screen and (max-width: 650px) {
+  .favouriteJokes {
+    width: 100%;
+  }
+  .work-place {
+    padding: 20px;
+  }
+  .jokeCard {
+    padding: 47px 20px 20px 80px;
+  }
+  .cardIconContainer {
+    left: 20px;
+    top: 47px;
+  }
+}

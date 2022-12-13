@@ -1,0 +1,45 @@
+.formJokeBtn{
+    display: block;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #8EA7FF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    cursor: pointer;
+}
+.formJokeBtn:disabled{
+    background-color: #8ea7ff63;
+}
+.jokeForm{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.radioBox{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333333;
+    line-height: 26px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.radioBox input{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+.searchInput{
+    padding: 10px 15px 10px 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,60 @@
+.button {
+  position: absolute;
+  font-weight: normal;
+  right: 40px;
+  top: 40px;
+  display: none;
+  z-index: 5;
+  background-color: transparent;
+  color: #ababab;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.button span {
+  width: 28px;
+  height: 28px;
+  background-color: black;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+.button span::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: white;
+  left: 7px;
+  top: 10px;
+  transition: all ease 0.3s;
+}
+
+.button span::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: white;
+  left: 7px;
+  top: 16px;
+  transition: all ease 0.3s;
+}
+.active span::before{
+    transform: rotate(-45deg);
+    top: 12px;
+}
+.active span::after{
+    transform: rotate(45deg);
+    top: 12px;
+}
+@media screen and (max-width: 1000px) {
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    right: 40px;
+    top: 20px;
+  }
+}

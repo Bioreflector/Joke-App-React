@@ -1,0 +1,31 @@
+.categoryLable {
+  display: block;
+  border-radius: 6px;
+  padding: 9px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #ababab;
+  cursor: pointer;
+}
+.categoryBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 2px solid #f8f8f8;
+}
+
+.categoryInput {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -2px;
+  outline: none;
+}
+
+.categoryInput:checked ~ .categoryLable {
+  background-color: #e7e6e6;
+  color: black;
+}
